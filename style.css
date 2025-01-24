@@ -201,7 +201,7 @@ p {
         font-weight: bold; /* جعل النص غامق */
         color: #000; /* تغيير لون النص */
     }
-    .f {
+    .fr {
         color: white;
         background-color: #1a0ec7;
         padding: 5px;
@@ -216,16 +216,16 @@ p {
         transition: transform 0.3s ease; /* تأثير السلاسة للتكبير */
     }
     
-    .f a {
+    .fr a {
         color: white; /* لون الرابط */
         text-decoration: none; /* إزالة الخط السفلي */
     }
     
-    .f:hover {
+    .fr:hover {
         transform: scale(1.1); /* تكبير العنصر عند hover */
     }
     
-    .f a:hover {
+    .fr a:hover {
         color: #ddd; /* لون الرابط عند hover */
         text-decoration: underline; /* إضافة خط سفلي عند hover */
     }
