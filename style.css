@@ -8,7 +8,7 @@ body {
     height: 110vh;
 }
 
-/* Header Sction */
+/* Header Section */
 .header {
     background-color: #2760ff;
     padding: 5px 13px 20px;
@@ -187,7 +187,7 @@ p {
     background-color: #e6e6e6; /* تغيير لون الخلفية */
     border-color: #bbb; /* تغيير لون الإطار */
     transform: scale(1.05); /* تكبير العنصر بالكامل */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* إضافة ظل
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* إضافة ظل */
 }
 
 /* تكبير الصورة فقط عند hover */
@@ -196,39 +196,36 @@ p {
 }
 
 /* تكبير النص عند hover */
-.games .item:hover p, .anime .item:hover p {
-    font-weight: bold; /* جعل النص غامق */
-    color: #000; /* تغيير لون النص */
-}
-.games .item:hover p, .anime .item:hover p {
-    font-weight: bold; /* جعل النص غامق */
-    color: #000; /* تغيير لون النص */
-}
-.f {
-    color: white;
-    background-color: #1a0ec7;
-    padding: 5px;
-    border-radius: 50px;
-    position: fixed; /* تثبيت العنصر في مكان معين */
-    bottom: 10px; /* تحديد المسافة من أسفل */
-    right: 10px; /* تحديد المسافة من اليمين */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* إضافة ظل */
-    font-size: 1em; /* حجم الخط */
-    text-align: center; /* محاذاة النص في الوسط */
-    margin: 0; /* إزالة الهوامش */
-    transition: transform 0.3s ease; /* تأثير السلاسة للتكبير */
-}
 
-.f a {
-    color: white; /* لون الرابط */
-    text-decoration: none; /* إزالة الخط السفلي */
-}
-
-.f:hover {
-    transform: scale(1.1); /* تكبير العنصر عند hover */
-}
-
-.f a:hover {
-    color: #ddd; /* لون الرابط عند hover */
-    text-decoration: underline; /* إضافة خط سفلي عند hover */
-}
+    .games .item:hover p, .anime .item:hover p {
+        font-weight: bold; /* جعل النص غامق */
+        color: #000; /* تغيير لون النص */
+    }
+    .friend {
+        color: white;
+        background-color: #1a0ec7;
+        padding: 5px;
+        border-radius: 50px;
+        position: fixed; /* تثبيت العنصر في مكان معين */
+        bottom: 10px; /* تحديد المسافة من أسفل */
+        right: 10px; /* تحديد المسافة من اليمين */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* إضافة ظل */
+        font-size: 1em; /* حجم الخط */
+        text-align: center; /* محاذاة النص في الوسط */
+        margin: 0; /* إزالة الهوامش */
+        transition: transform 0.3s ease; /* تأثير السلاسة للتكبير */
+    }
+    
+    .friend a {
+        color: white; /* لون الرابط */
+        text-decoration: none; /* إزالة الخط السفلي */
+    }
+    
+    .friend:hover {
+        transform: scale(1.1); /* تكبير العنصر عند hover */
+    }
+    
+    .friend a:hover {
+        color: #ddd; /* لون الرابط عند hover */
+        text-decoration: underline; /* إضافة خط سفلي عند hover */
+    }
