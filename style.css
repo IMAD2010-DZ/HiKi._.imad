@@ -228,4 +228,103 @@ p {
     .fr a:hover {
         color: #ddd; /* لون الرابط عند hover */
         text-decoration: underline; /* إضافة خط سفلي عند hover */
+        
     }
+    .position :hover{
+        transform: scale(1.1); 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 50%;
+
+    }
+    .books{
+        display: flex;
+        gap: 10px;
+    }
+    .books img{
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 15px;
+        border: 3px solid rgb(65, 131, 255);
+    }  
+    .books div {
+        text-align: center;
+    }
+    
+    .books p{
+        margin-top: 5px;
+        font-size: 1em;
+        color: #333;
+        font-weight: bold;
+    }
+    /* تنسيق النصوص داخل الإطار */
+    .books-info {
+        font-size: 0.9em; /* تصغير حجم الخط */
+        color: #333; /* لون الخط */
+        background-color: rgba(245, 245, 245, 0.8); /* لون الخلفية (رمادي شبه أبيض) */
+        padding: 5px 10px; /* مساحة داخلية للنص */
+        margin-top: 5px; /* مسافة بين الصورة والنص */
+        border: 1px solid #ddd; /* إطار رمادي فاتح */
+        border-radius: 10px; /* حواف دائرية للإطار */
+        text-align: center; /* محاذاة النص */
+        transition: all 0.3s ease; /* تأثير السلاسة */
+    }
+    
+    /* تأثير hover عند تمرير المؤشر */
+    .books-info:hover {
+        background-color: #e6e6e6; /* لون الخلفية عند تمرير المؤشر */
+        border-color: #bbb; /* تغيير لون الإطار */
+        color: #000; /* تغيير لون النص */
+        transform: scale(1.05); /* تكبير العنصر قليلاً */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* إضافة ظل */
+    }
+    /* تنسيق العنصر المشترك بين الصورة والاسم */
+    .books .name{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        padding: 10px;
+        border: 1px solid rgba(220, 220, 220, 0.8); /* إطار رمادي فاتح */
+        border-radius: 10px;
+        background-color: rgba(245, 245, 245, 0.8); /* لون الخلفية */
+        transition: all 0.3s ease; /* تأثير السلاسة */
+    }
+    
+    /* تنسيق الصور */
+    .books .name img {
+        width: 100px;
+        height: 130px;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: transform 0.3s ease; /* تأثير السلاسة للتكبير */
+    }
+    
+    /* تنسيق النص */
+    .books .name p {
+        font-size: 0.8em; /* حجم الخط */
+        color: #333; /* لون النص */
+        margin: 0;
+        text-align: center;
+    }
+    
+    /* تأثير hover على الصورة والاسم */
+    .books .name:hover {
+        background-color: #e6e6e6; /* تغيير لون الخلفية */
+        border-color: #bbb; /* تغيير لون الإطار */
+        transform: scale(1.05); /* تكبير العنصر بالكامل */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* إضافة ظل */
+    }
+    
+    /* تكبير الصورة فقط عند hover */
+    .books .name:hover img {
+        transform: scale(1.1); /* تكبير الصورة */
+    }
+    
+    /* تكبير النص عند hover */
+    
+        .books .name:hover p {
+            font-weight: bold; /* جعل النص غامق */
+            color: #000; /* تغيير لون النص */
+        }
+
