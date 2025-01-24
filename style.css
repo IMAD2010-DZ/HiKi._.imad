@@ -187,7 +187,7 @@ p {
     background-color: #e6e6e6; /* تغيير لون الخلفية */
     border-color: #bbb; /* تغيير لون الإطار */
     transform: scale(1.05); /* تكبير العنصر بالكامل */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* إضافة ظل */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* إضافة ظل
 }
 
 /* تكبير الصورة فقط عند hover */
