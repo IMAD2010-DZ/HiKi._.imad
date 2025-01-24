@@ -204,7 +204,7 @@ p {
     font-weight: bold; /* جعل النص غامق */
     color: #000; /* تغيير لون النص */
 }
-.friend {
+.12 {
     color: white;
     background-color: #1a0ec7;
     padding: 5px;
@@ -219,16 +219,16 @@ p {
     transition: transform 0.3s ease; /* تأثير السلاسة للتكبير */
 }
 
-.friend a {
+.12 a {
     color: white; /* لون الرابط */
     text-decoration: none; /* إزالة الخط السفلي */
 }
 
-.friend:hover {
+.12:hover {
     transform: scale(1.1); /* تكبير العنصر عند hover */
 }
 
-.friend a:hover {
+.12 a:hover {
     color: #ddd; /* لون الرابط عند hover */
     text-decoration: underline; /* إضافة خط سفلي عند hover */
 }
