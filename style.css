@@ -1,16 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* Global Styles */
 body {
     margin: 0;
-    background: linear-gradient(rgb(255, 0, 212), rgb(240, 240, 240));
+    background: black;
     font-family: "Roboto", serif;
     color: #111;
-    height: 110vh;
 }
 
 /* Header Section */
 .header {
-    background-color: #2760ff;
+    background-color: #FF0000;
     padding: 5px 13px 20px;
     display: flex;
     justify-content: space-between;
@@ -326,4 +327,61 @@ p {
         .books .name:hover p {
             font-weight: bold; /* جعل النص غامق */
             color: #000; /* تغيير لون النص */
+        }
+        .btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 240px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+            cursor: pointer;
+            overflow: hidden;
+            font-size: 2em;
+            transition: 0.5s;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #ffffff;
+            padding: 0 10px;
+            backdrop-filter: blur(20px);
+            box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+            border: 2px solid rgba(225, 225, 225, 0.18);
+        }
+        .btn:hover{
+            filter: drop-shadow(0 0 10px #291fbb) drop-shadow(0 0 30px #291fbb);
+            letter-spacing: 0.2em;
+            color: #fff;
+            padding: 5px;
+        }
+        
+        .btn span{
+            position: absolute;
+            top: 0;
+            width : 2px;
+            height: 100%;
+            background: #291fbb;
+            pointer-events: none;
+            transition: transform 0.2s ease-in-out;
+            z-index : -1;
+            transform:  scaleY(0);
+            transform-origin: bottom;
+        }
+        
+        .btn:hover span{
+            transform: scaleY(1);
+            transform-origin: top;
+        }
+        
+        .btn span:nth-child(even)
+        {
+            transform-origin: top;
+        }
+        
+        .btn:hover span:nth-child(even)
+        {
+            transform-origin: bottom;
         }
