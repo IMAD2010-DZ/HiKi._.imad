@@ -127,6 +127,26 @@
     <div class="fr">
         <a href="https://www.instagram.com/adem__hamed/"><h3> My Favorit Friend</h3></a>
         <p><a href="https://www.instagram.com/alaziz.mostafa3/">My Favorit Friend</a></p>
+        <div class="container">
+       <h6> <a href="#" class="btn">Welcome To My WebSite</a></h6>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+            let btns = document.querySelectorAll('.btn');
+            btns.forEach(function(btn){
+                let spans = []
+                for(let i=0;i<120;i++){
+                    let span = document.createElement('span');
+                    span.style.left = `${i * 2}px`;
+                    spans.push(span);
+                    btn.appendChild(span);
+                    let randomDealy = (Math.random() * 1) + 0;
+                    span.style.transitionDelay = randomDealy + 's';
+                }
+            })
+        })
+    </script>
 
     <script src="scripte.js"></script>
 </body>
