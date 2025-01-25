@@ -12,7 +12,26 @@
 <body>
     <header class="header">
         <img src="https://scontent.falg5-2.fna.fbcdn.net/v/t39.30808-6/474535125_122202643040227735_4213918474520163786_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=wnEXWSfrP50Q7kNvgGHF8EO&_nc_zt=23&_nc_ht=scontent.falg5-2.fna&_nc_gid=A1qWd6BOMq8AtXySE6nWikY&oh=00_AYAdLQHnMBQh0baEsYik37Aw6ukNgHFznBWtd0TW6AW05Q&oe=6798A7D0" alt="Logo" width="90px">
-        <h1 class="header-title">Welcome to My Website</h1>
+            <div class="container">
+       <h6> <a href="#" class="btn">Welcome To My WebSite</a></h6>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+            let btns = document.querySelectorAll('.btn');
+            btns.forEach(function(btn){
+                let spans = []
+                for(let i=0;i<120;i++){
+                    let span = document.createElement('span');
+                    span.style.left = `${i * 2}px`;
+                    spans.push(span);
+                    btn.appendChild(span);
+                    let randomDealy = (Math.random() * 1) + 0;
+                    span.style.transitionDelay = randomDealy + 's';
+                }
+            })
+        })
+    </script>
     </header>
     <nav class="links">
         <h2><a href="#" class="active" data-section="about-me">About Me</a></h2>
